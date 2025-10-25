@@ -3,6 +3,7 @@ window.addEventListener('load', () => {
     const user = data[0]?.owner;
     document.querySelector('.header img').src = user?.avatar_url;
     document.querySelector('.header h1').textContent = user?.login;
+    document.title = user?.login;
 
     data.forEach(ver => {
       const div = document.createElement('div');

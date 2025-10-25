@@ -19,8 +19,7 @@ body {
 }
 
 body:not(.preload) {
-  padding-top: calc(var(--gap) * 2);
-  padding-bottom: calc(var(--gap) * 2);
+  padding: calc(var(--gap) * 2);
 }
 
 body:not(.preload) .preload {
