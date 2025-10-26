@@ -10,10 +10,10 @@ async function sortRepos (repos) {
     '': 6,
     b: 5,
     a: 4,
-    inf: 3,
-    in: 2,
+    'inf-': 3,
+    'in-': 2,
     c: 1,
-    rd: 0
+    'rd-': 0
   })[prefix?.toLowerCase() || ''] ?? -1;
 
   const parse = name => {
