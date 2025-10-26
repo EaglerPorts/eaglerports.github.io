@@ -17,7 +17,7 @@ async function sortRepos (repos) {
   })[prefix?.toLowerCase() || ''] ?? -1;
 
   const parse = name => {
-    const m = name.match(/^(inf|in|rd|c|b|a)?(\d+)\.(\d+)(?:[._-](\d+))?(?:[._-](\d+))?$/i);
+    const m = name.match(/^((?:inf-|in-|rd-|c|b|a))?(\d+)\.(\d+)(?:[._-](\d+))?(?:[._-](\d+))?$/i);
     return m
       ? {
           stage: type(m[1]),
